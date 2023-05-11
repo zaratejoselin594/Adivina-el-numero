@@ -2,7 +2,7 @@ const p = document.querySelector(".p");
 const numero = document.querySelector("#input");
 const btn = document.querySelector("#boton");
 let salida = "";
-let str = numero.value.toString()
+
 
 btn.addEventListener("click", (e) => {
   e.preventDefault()

@@ -4,7 +4,6 @@ const btn = document.querySelector("#boton");
 let salida = "";
 
 
-
 const mql = matchMedia("(max-width: 900px)");
 const mql2 = matchMedia("(min-width: 900px)");
 

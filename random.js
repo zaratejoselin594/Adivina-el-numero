@@ -23,9 +23,8 @@ mql.addEventListener("change", () => {
 //Abrimos la escuca al evento click
 btn.addEventListener("click", (e) => {
   e.preventDefault()
-  //Generamos un numero aleatorio a cada click
-  let num = Math.random() * 10;
-  num = Math.round(num);
+  //Generamos un numero aleatorio a cada click del 1 al 10
+  let num = Math.floor(Math.random() * 10) + 1;
 
   //Segun el numero dado, al mensaje de respuesta se le dara un estilo y un breve texto 
   //respecto a si el numero a sido adivinado o no

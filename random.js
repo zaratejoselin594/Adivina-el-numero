@@ -4,6 +4,22 @@ const btn = document.querySelector("#boton");
 let salida = "";
 
 
+
+const mql = matchMedia("(max-width: 900px)");
+const mql2 = matchMedia("(min-width: 900px)");
+
+const caja = document.querySelector(".divv");
+mql.addEventListener("change", () => {
+  if (mql.matches) {
+    caja.style.width = "100%";
+    caja.style.height = "60%";
+  }
+  else if (mql2.matches) {
+    caja.style.width = "40%";
+    caja.style.height = "50%";
+  }
+})
+
 btn.addEventListener("click", (e) => {
   e.preventDefault()
   let num = Math.random() * 10;
